@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <aside class="fixed top-0 z-10">
+        <div id="overlay" class="hidden w-screen h-screen fixed top-0 left-0 z-0" onclick="closeSidebar()"></div>
+        <div id="sidebarMenu"
+            class="w-screen sm:w-[350px] md:w-[400px] bg-[#85586f] h-screen absolute left-0 top-0 transition-transform delay-300 ease-in-out -translate-x-full z-1">
+            <div class="border-b py-6 px-4 lg:p-6">
+                <div class="flex justify-between items-center w-full">
+                    <img src="/assets/images/Poetry-of-gems-logo-text-black-bg (1).webp"
+                        class="flex max-w-52 lg:max-w-64" width="250">
+                    <i class="fa-solid fa-xmark text-[#f8ede3] text-2xl cursor-pointer" onclick="closeSidebar()"></i>
+                </div>
+            </div>
+            <ul class="p-4 lg:p-6 grid gap-5 lg:gap-6">
+                <li>
+                    <a href="#" class="no-underline lg:text-base text-sm text-[#F8EDE3] p-2 font-semibold text-white">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-underline lg:text-base text-sm text-[#F8EDE3] p-2 font-semibold text-white">
+                        Mythology & Art
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-underline lg:text-base text-sm text-[#F8EDE3] p-2 font-semibold text-white">
+                        Literature
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-underline lg:text-base text-sm text-[#F8EDE3] p-2 font-semibold text-white">
+                        English-American Poetry
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <div id="asideOverlay" class="transition-filter delay-300 ease-in-out">
+        <header
+            class="border-b border-color border-[rgba(0,0,0,0.1)] flex lg:justify-center justify-around items-center gap-2 py-0 md:py-3 lg:pt-8 lg:pb-6 lg:px-4 bg-[#f5d1c1]">
+            <i class="lg:hidden fa-solid fa-bars cursor-pointer px-3 py-3 text-lg text-[#85586F]"
+                onclick="openSidebar()"></i>
+            <div class="flex">
+                <img src="/assets/images/Poetry-of-gems-logo-text.webp" class="max-w-80 lg:max-w-96 w-full" width="400">
+            </div>
+            <i class="lg:hidden fa-solid fa-magnifying-glass cursor-pointer px-3 py-3 text-lg text-[#85586F]"></i>
+        </header>
+        <nav class="hidden lg:flex justify-between items-center sticky top-0 bg-[#f5d1c1]">
+            <i class="fa-solid fa-bars cursor-pointer px-6 py-4 text-xl text-[#85586F]" onclick="openSidebar()"></i>
+            <ul
+                class="flex justify-center items-center w-full gap-6 font-semibold text-base list-nonetracking-wide text-black">
+                <li>
+                    <a href="#" class="no-underline text-black p-2 font-semibold transition-text hover:text-[#D0B8A8]">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-underline text-black p-2 font-semibold transition-text hover:text-[#D0B8A8]">
+                        Mythology & Art
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-underline text-black p-2 font-semibold transition-text hover:text-[#D0B8A8]">
+                        Literature
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="no-underline text-black p-2 font-semibold transition-text hover:text-[#D0B8A8]">
+                        English-American Poetry
+                    </a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass cursor-pointer px-6 py-4 text-xl text-[#85586F]"></i>
+        </nav>
+        <main>
+            <section class="block h-screen">
+
+            </section>
+            <section class="block h-screen">
+
+            </section>
+        </main>
+    </div>
+    <script src="/assets/scripts/script.js">
+    </script>
+</body>
+
+</html>
